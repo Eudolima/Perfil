@@ -1,0 +1,80 @@
+/* ==========================================
+   1. ESTILOS GLOBAIS DA PÁGINA
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo suave para a tela inteira */
+    margin: 0;
+    
+    /* Centraliza o cartão perfeitamente no meio da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;        /* Garante 100% da altura da tela */
+}
+
+/* ==========================================
+   2. CAIXA DO CARTÃO DE PERFIL
+   ========================================== */
+.cartao-perfil {
+    background-color: #ffffff; /* Fundo branco do cartão */
+    padding: 30px;
+    border-radius: 16px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;         /* Alinha os textos ao centro */
+    max-width: 320px;          /* Largura máxima do cartão */
+    width: 100%;               /* Adapta-se bem a telas menores */
+}
+
+/* ==========================================
+   3. FOTO E TEXTOS DO PERFIL
+   ========================================== */
+.cartao-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Torna a imagem perfeitamente redonda */
+    object-fit: cover;  /* Evita distorções na imagem */
+    border: 3px solid #4f46e5; /* Borda roxa de destaque */
+}
+
+.cartao-perfil h1 {
+    margin: 15px 0 5px 0;
+    font-size: 1.5rem;
+    color: #1f2937;
+}
+
+.cartao-perfil p {
+    margin: 0 0 20px 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   4. LISTA E BOTÕES DE LINK
+   ========================================== */
+.cartao-perfil ul {
+    list-style: none; /* Remove as bolinhas padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.cartao-perfil li {
+    margin-bottom: 10px; /* Espaço entre os botões */
+}
+
+.cartao-perfil a {
+    display: block;             /* Ocupa a largura total da caixa */
+    padding: 12px 20px;
+    background-color: #4f46e5;  /* Cor principal do botão */
+    color: #ffffff;             /* Texto branco */
+    text-decoration: none;      /* Remove o sublinhado do link */
+    border-radius: 8px;         /* Bordas suaves nos botões */
+    font-weight: 600;
+    transition: all 0.2s ease;  /* Animação suave para efeitos */
+}
+
+/* Efeito ao passar o mouse por cima do link */
+.cartao-perfil a:hover {
+    background-color: #4338ca;  /* Escurece a cor do botão */
+    transform: scale(1.03);      /* Aumenta levemente o tamanho do botão */
+}
